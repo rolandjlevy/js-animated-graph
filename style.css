@@ -1,0 +1,74 @@
+:root {
+  --width: 50;
+  --height: 200px;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.block-wrapper {
+  position: relative;
+  height: var(--height);
+  padding: 0;
+}
+
+.block:nth-child(1) { 
+  --speed: 0.5s;
+  --left: 0;
+  --background: #ceabb1ff;
+}
+
+.block:nth-child(2) { 
+  --speed: 0.675s;
+  --left: calc(var(--width) * 1px);
+  --background: #b5ffe9ff;
+}
+
+.block:nth-child(3) { 
+  --speed: 0.75s;
+  --left: calc(var(--width) * 2px);
+  --background: #c5e0d8ff;
+}
+
+.block:nth-child(4) { 
+  --speed: 0.875s;
+  --left: calc(var(--width) * 3px);
+  --background: #c9c9c9ff;
+}
+
+.block:nth-child(5) { 
+  --speed: 1s;
+  --left: calc(var(--width) * 4px);
+  --background: #44454599; 
+}
+
+.block {
+  position: absolute;
+  bottom: 0;
+  left: var(--left); 
+  height: 10px;
+  width: 45px;
+  transition: all var(--speed) cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  background: var(--background); 
+  list-style: none;
+}
+
+.height {
+  height: var(--height);
+}
+
+button {
+  cursor: pointer;
+}
+
+.m-t-20 {
+  margin-top: 20px;
+}
