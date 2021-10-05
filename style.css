@@ -1,12 +1,15 @@
 :root {
-  --width: 50;
+  --width: 80;
   --height: 200px;
+}
+
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
   box-sizing: border-box;
   margin: 30px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
@@ -55,8 +58,8 @@ body {
   bottom: 0;
   left: var(--left); 
   height: 10px;
-  width: 45px;
-  transition: all var(--speed) cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  width: 75px;
+  transition: all var(--speed) cubic-bezier(0.7, -0.55, 0.25, 1.55);
   background: var(--background); 
   list-style: none;
 }
